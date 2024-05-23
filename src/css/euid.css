@@ -20,4 +20,9 @@
     .euid-switch-label{
       @apply w-8 block text-gray-20 peer-checked:text-primary font-bold after:content-['OFF'] peer-checked:after:content-['ON'];
     }
+
+    .euid-avatars {
+        @apply relative border rounded-full border-gray-20 group-hover:z-50 group-hover:border-primary grayscale group-hover:grayscale-0 group-focus:z-50 group-focus:border-primary group-focus:grayscale-0;
+    }
+
   }
