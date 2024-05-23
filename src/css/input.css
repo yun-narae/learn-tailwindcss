@@ -1,7 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.box{
-  
-}
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "./euid.css";
+@import "tailwindcss/utilities";
+@import "./euid-utils.css";
