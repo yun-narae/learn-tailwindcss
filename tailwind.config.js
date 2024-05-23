@@ -3,23 +3,28 @@ module.exports = {
   content: ["./src/**/*.html"],
   theme: {
     fontFamily: {
-      sans: ['SUIT Variable', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      suit: ["SUIT Variable", "sans-serif"],
     },
-    
-    extend: {colors: {
-      'blue': '#1fb6ff',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'yellow': '#ffc82c',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
-    },},
-
+    extend: {
+      colors: {
+        primary: "#03cf5d",
+        white: "#ffffff",
+        warning: "#ff1414",
+        "blue-10": "#e9f0fd",
+        "gray-10": "#dadada",
+        "gray-20": "#999999",
+        "gray-30": "#666666",
+        "gray-40": "#333333",
+        black: "#121212",
+      },
+      backgroundImage: {
+        "gradient-radial":
+          "radial-gradient(circle, var(--tw-gradient-from), var(--tw-gradient-to))",
+      },
+    },
   },
-  plugins: [],
-}
-
+  plugins: [
+    // require('@tailwindcss/forms'),
+    require("@tailwindcss/aspect-ratio"),
+  ],
+};
